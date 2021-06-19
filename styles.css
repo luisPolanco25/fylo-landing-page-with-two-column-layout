@@ -6,11 +6,13 @@
     --grayish-blue: hsl(240, 75%, 98%);
     --light-gray: hsl(0, 0%, 75%);
     
-    --bold: 400;
-    --bolder: 700;
+    --regular: 400;
+    --bold: 700;
     
     --raleway: 'Raleway', sans-serif;
     --open: 'Open Sans', sans-serif;
+
+    --ease: all 300ms ease;
 }
 
 * {
@@ -27,4 +29,328 @@ html {
 body {
     width: 100%;
     min-height: 100vh;
+    /* padding: 64px 80px 64px 80px; */
+}
+
+header {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+#header-logo {
+    margin-left: 80px;
+}
+
+header nav {
+    margin-right: 80px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    margin-right: 60px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-weight: var(--regular);
+    transition: var(--ease);
+}
+
+header nav ul li a:hover {
+    filter: contrast(20%);
+}
+
+#introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 160px;
+}
+
+main h1, main h2 {
+    color: var(--dark-blue);
+    font-family: var(--raleway);
+    font-weight: var(--bold);
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+main p {
+    color: var(--dark-blue);
+    font-weight: var(--regular);
+    font-size: 1.1rem;
+    width: 88%;
+    margin-bottom: 1rem;
+}
+
+#introduction #introduction-texts {
+    margin-left: 80px;
+    flex-basis: 50%;
+    margin-top: -80px;
+}
+
+#introduction #introduction-img-container {
+    margin-right: 80px;
+    flex-basis: 50%;
+}
+
+#introduction #introduction-img-container img {
+    width: 100%;
+}
+
+#introduction #introduction-texts form input {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    font-family: var(--raleway);
+    width: 316px;
+    border: 1px solid var(--desaturated-blue);
+    border-radius: 2px;
+    outline: none;
+    margin-right: 1rem;
+}
+
+#introduction #introduction-texts form input::placeholder {
+    color: var(--light-gray);
+}
+
+.form-buttons {
+    background-color: var(--bright-blue);
+    width: 186px;
+    padding: 0.75rem;
+    color: white;
+    font-size: 0.9rem;
+    font-family: var(--open);
+    font-weight: var(--regular);
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0px 4px 6px #ccc;
+    cursor: pointer;
+    transition: var(--ease);
+}
+
+.form-buttons:hover {
+    background-color: hsl(210, 93%, 62%);
+}
+
+.desktop {
+    width: 100%;
+}
+
+.mobile {
+    display: none;
+    width: 100%;
+}
+
+#testimonials {
+    background-color: #F8F8FE;
+    margin-top: -0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#testimonials-text {
+    margin-left: 80px;
+    margin-top: 60px;
+    margin-right: 3rem;
+}
+
+#testimonials-text #see-how a {
+    text-decoration: none;
+    color: var(--moderate-cyan);
+    border-bottom: 1px solid var(--moderate-cyan);
+    transition: var(--ease);
+}
+
+#testimonials-text #see-how a:hover {
+    filter: brightness(135%);
+}
+
+#testimonials-img-container {
+    margin-right: 80px;
+}
+
+#testimonials-img-container img {
+    width: 90%;
+}
+
+#burton-testimonial {
+    background-color: white;
+    width: 360px;
+    padding: 32px;
+    color: var(--dark-blue);
+    margin-top: 3rem;
+    margin-bottom: 110px;
+    box-shadow: 2px 4px 14px #ccc;
+}
+
+#burton-testimonial p {
+    font-family: var(--raleway);
+    font-weight: var(--regular);
+    font-size: 0.9rem;
+    width: 100%;
+    line-height: 1.6;
+}
+
+#burton-testimonial #description {
+    display: flex;
+    align-items: center;
+}
+
+#burton-testimonial #description img {
+    width: 32px;
+    flex-basis: 16%;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+}
+
+#burton-testimonial #description div {
+    flex-basis: 80%;
+}
+
+#burton-testimonial #description div h3 {
+    font-weight: var(--bold);
+    font-size: 0.8rem;
+}
+
+#burton-testimonial #description div small {
+    font-size: 0.7rem;
+}
+
+footer #early-access, footer #contact {
+    padding: 110px 80px 80px 80px;
+}
+
+footer #early-access {
+    display: flex;
+    background-color: var(--desaturated-blue);
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#early-text {
+    flex-basis: 42%;
+}
+
+#early-access h2 {
+    font-family: var(--raleway);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: var(--bold);
+}
+
+#early-access p {
+    font-size: 1.1rem;
+    font-weight: var(--regular);
+    line-height: 1.6;
+}
+
+#early-access form {
+    display: flex;
+    flex-direction: column;
+}
+
+#early-access form input {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    font-family: var(--raleway);
+    width: 480px;
+    border: 1px solid var(--desaturated-blue);
+    border-radius: 2px;
+    outline: none;
+    margin-bottom: 1rem;
+    box-shadow: 0px 3px 4px #333;
+}
+
+#early-access form input::placeholder {
+    color: var(--light-gray);
+}
+
+#early-access form button {
+    box-shadow: 0px 4px 6px #333;
+
+}
+
+footer #contact {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+#contact #footer-logo {
+    filter: brightness(0) invert(1);
+    margin-bottom: 1rem;
+}
+
+#contact #contact-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#contact #info div {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+#contact #info div img {
+    margin-right: 1rem;
+}
+
+#contact ul li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+#contact ul li a {
+    text-decoration: none;
+    color: white;
+    transition: var(--ease);
+}
+
+#contact ul li a:hover {
+    color: var(--desaturated-blue);
+}
+
+#social-media button {
+    background: transparent;
+    color: white;
+    font-size: 0.8rem;
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 50%;
+    width: 30px;
+    margin-right: 0.7rem;
+    cursor: pointer;
+    transition: var(--ease);
+}
+
+#social-media button:hover {
+    color: var(--desaturated-blue);
+    border: 1px solid var(--desaturated-blue);
+}
+
+#social-media button:last-child {
+    margin-right: 0;
 }

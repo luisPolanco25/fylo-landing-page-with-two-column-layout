@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,58 +8,175 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Luis Polanco | Fylo landing page with two column layout</title>
 
 </head>
+
 <body>
 
-  Features
-  Team
-  Sign In
+  <header>
 
-  All your files in one secure location, accessible anywhere.
+    <div id="header-logo">
+      <img src="./images/logo.svg" alt="Fylo" />
+    </div>
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
+    <nav>
+      <ul>
+        <li><a href="https://luispolanco25.github.io/fylo-landing-page-with-two-column-layout/">Features</a></li>
+        <li><a href="https://luispolanco25.github.io/fylo-landing-page-with-two-column-layout/">Team</a></li>
+        <li><a href="https://luispolanco25.github.io/fylo-landing-page-with-two-column-layout/">Sign In</a></li>
+      </ul>
+    </nav>
 
-  Get Started
+  </header>
 
-  Stay productive, wherever you are
+  <main>
 
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
+    <section id="introduction">
 
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
+      <div id="introduction-texts">
 
-  See how Fylo works
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p>
+          Fylo stores your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends,
+          family, and co-workers.
+        </p>
 
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
+        <form>
+          <input type="text" name="email" aria-label="Email address" placeholder="Enter your email..."
+            autocomplete="off" />
+          <button class="form-buttons" type="submit">Get Started</button>
+        </form>
 
-  Kyle Burton
-  Founder & CEO, Huddle
+      </div>
 
-  Get early access today
+      <div id="introduction-img-container">
+        <img src="./images/illustration-1.svg" alt="Securing files" />
+      </div>
 
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
+    </section>
 
-  Get Started For Free
+    <img src="./images/bg-curve-desktop.svg" alt="Curve" class="desktop" />
+    <img src="./images/bg-curve-mobile.svg" alt="Curve" class="mobile" />
 
-  Phone: +1-543-123-4567
-  example@fylo.com
+    <section id="testimonials">
 
-  About Us
-  Jobs
-  Press
-  Blog
+      <div id="testimonials-text">
 
-  Contact Us
-  Terms
-  Privacy
+        <h2>Stay productive, wherever you are</h2>
+        <p>
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
+        </p>
+        <p>
+          Securely share files and folders with friends, family and colleagues for
+          live collaboration. No email attachments required!
+        </p>
+        <p id="see-how">
+          <a href="https://luispolanco25.github.io/fylo-landing-page-with-two-column-layout/">
+            See how Fylo works <img src="./images/icon-arrow.svg" alt="arrow" />
+          </a>
+        </p>
+
+        <div id="burton-testimonial">
+
+          <img src="./images/icon-quotes.svg" alt="quotes" />
+          <p>
+            Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.
+          </p>
+
+          <div id="description">
+            <img src="./images/avatar-testimonial.jpg" alt="Kyle Burton" />
+            <div>
+              <h3>Kyle Burton</h3>
+              <small>Founder & CEO, Huddle</small>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="testimonials-img-container">
+        <img src="./images/illustration-2.svg" alt="People being productive" />
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div id="early-access">
+
+      <div id="early-text">
+        <h2>Get early access today</h2>
+        <p>
+          It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.
+        </p>
+      </div>
+
+      <form>
+        <input type="text" name="email" aria-label="Email address" placeholder="email@example.com"
+          autocomplete="off" />
+        <button class="form-buttons" type="submit">Get Started For Free</button>
+      </form>
+
+    </div>
+
+    <div id="contact">
+
+      <div id="logo">
+        <img src="./images/logo.svg" alt="Fylo" id="footer-logo" />
+      </div>
+      
+      <div id="contact-text">
+
+        <div id="info">
+          
+          <div>
+            <img src="./images/icon-phone.svg" alt="Phone" />
+            <span>Phone: +1-543-123-4567</span>  
+          </div>
+          
+          <div>
+            <img src="./images/icon-email.svg" alt="Email" />
+            <span>example@fylo.com</span>
+          </div>
+          
+        </div>
+  
+        <ul>
+          <li><a href="https://luispolanco25.github.io/fylo-landing-page-with-two-column-layout/">About Us</a></li>
+          <li><a href="https://luispolanco25.github.io/fylo-landing-page-with-two-column-layout/">Jobs</a></li>
+          <li><a href="https://luispolanco25.github.io/fylo-landing-page-with-two-column-layout/">Press</a></li>
+          <li><a href="https://luispolanco25.github.io/fylo-landing-page-with-two-column-layout/">Blogs</a></li>
+        </ul>
+  
+        <ul>
+          <li><a href="https://luispolanco25.github.io/fylo-landing-page-with-two-column-layout/">Contact Us</a></li>
+          <li><a href="https://luispolanco25.github.io/fylo-landing-page-with-two-column-layout/">Terms</a></li>
+          <li><a href="https://luispolanco25.github.io/fylo-landing-page-with-two-column-layout/">Privacy</a></li>
+        </ul>
+  
+        <div id="social-media">
+          <button title="Facebook" aria-label="Facebook button"><i class="fab fa-facebook-f"></i></button>
+          <button title="Twitter" aria-label="Twitter button"><i class="fab fa-twitter"></i></button>
+          <button title="Instagram" aria-label="Instagram button"><i class="fab fa-instagram"></i></button>
+        </div>
+        
+      </div>
+      
+    </div>
+
+  </footer>
 
 </body>
+
 </html>
