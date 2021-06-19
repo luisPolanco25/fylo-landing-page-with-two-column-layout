@@ -29,7 +29,6 @@ html {
 body {
     width: 100%;
     min-height: 100vh;
-    /* padding: 64px 80px 64px 80px; */
 }
 
 header {
@@ -123,6 +122,7 @@ main p {
     border-radius: 2px;
     outline: none;
     margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 #introduction #introduction-texts form input::placeholder {
@@ -146,6 +146,12 @@ main p {
 
 .form-buttons:hover {
     background-color: hsl(210, 93%, 62%);
+}
+
+form p {
+    font-size: 0.8rem !important;
+    margin-top: -0.8rem !important;
+    margin-bottom: 0.8rem;
 }
 
 .desktop {
