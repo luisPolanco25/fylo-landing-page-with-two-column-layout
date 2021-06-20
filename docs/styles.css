@@ -83,7 +83,7 @@ main h1, main h2 {
     color: var(--dark-blue);
     font-family: var(--raleway);
     font-weight: var(--bold);
-    font-size: 2.5rem;
+    font-size: 2.26rem;
     line-height: 1.4;
     margin-bottom: 1rem;
 }
@@ -210,7 +210,7 @@ form p {
     padding: 32px;
     color: var(--dark-blue);
     margin-top: 3rem;
-    margin-bottom: 110px;
+    margin-bottom: 80px;
     box-shadow: 2px 4px 14px #ccc;
 }
 
