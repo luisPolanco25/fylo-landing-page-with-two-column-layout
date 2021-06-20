@@ -424,12 +424,199 @@ footer #contact {
     }
 }
 
-@media (max-width: 725px) {
-    #testimonials-img-container img {
-        width: 250px;
+
+@media (max-width: 750px) {
+
+    html {
+        font-size: 14px;
+    }
+    
+    header {
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+    
+    #header-logo {
+        margin-left: 50px;
+    }
+
+    #header-logo img {
+        width: 86px;
+    }
+    
+    header nav {
+        margin-right: 50px;
+    }
+
+    header nav ul li {
+        list-style: none;
+        margin-right: 12px;
+    }
+
+    header nav ul li:last-child {
+        margin-right: 0;
+    }    
+
+    header nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    #introduction {
+        flex-direction: column;
+    }
+
+    #introduction #introduction-texts {
+        order: 2;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 110px;
+    }
+    
+    #introduction #introduction-img-container {
+        margin-right: 50px;
+        margin-left: 50px;
+        order: 1;
     }
 
     #introduction #introduction-img-container img {
-        width: 350px;
+        display: block;
     }
+
+    main h1, main h2 {
+        margin-top: 0;
+        text-align: center;
+        font-size: 1.56rem;
+    }
+
+    main p {
+        text-align: center;
+        width: 100% !important;
+        font-size: 0.94rem;
+    }
+
+    #introduction #introduction-texts form input {
+        width: 100% !important;
+        margin-right: 0;
+    }
+
+    .form-buttons {
+        width: 100% !important;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    #testimonials {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #testimonials-text {
+        margin-right: 50px;
+        margin-left: 50px;
+        order: 2;
+    }
+
+    #testimonials #testimonials-text h2 {
+        font-size: 1.1rem;
+    }
+    
+    #testimonials #testimonials-text p {
+        text-align: left;
+    }
+
+    #testimonials #see-how {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #testimonials-img-container {
+        margin-right: 50px;
+        margin-left: 50px;
+        order: 1;
+    }
+    
+    #testimonials-img-container img {
+        width: 90%;
+    }
+    
+    #burton-testimonial {
+        background-color: white;
+        width: 300px;
+        padding: 26px;
+    }
+
+    #burton-testimonial p {
+        text-align: left;
+        font-size: 0.8rem;
+    }
+
+    footer #early-access, footer #contact {
+        padding: 110px 50px 50px 50px;
+    }
+
+    footer #early-access {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer #early-access h2 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    footer #early-access p {
+        text-align: center;
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+
+    footer #early-access form {
+        width: 100%;
+    }
+
+    footer #early-access form input {
+        width: 100% !important;
+    }
+
+    footer #contact #contact-text {
+        flex-direction: column;
+    }
+
+    footer #contact #info,
+    footer #contact #contact-text ul,
+    #social-media {
+        margin-top: 1.5rem;
+    }
+
+    #social-media {
+        align-self: center;
+    }
+    
+}
+
+@media (max-width: 360px) {
+    header {
+        flex-direction: column;
+    }
+
+    #header-logo {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    
+    header nav {
+        margin-right: 0;
+    }
+
+    #burton-testimonial {
+        width: 280px;
+    }
+    
 }
